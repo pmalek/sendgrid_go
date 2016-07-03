@@ -1,0 +1,66 @@
+{
+	"ImportPath": "github.com/pmalek/sendgrid_go",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/buaazp/fasthttprouter",
+			"Comment": "v1.1-36-g0729217",
+			"Rev": "0729217d031ab353a3e34b94e8544e167f7ce9a4"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/flate",
+			"Comment": "v1.0-12-g14eb9c4",
+			"Rev": "14eb9c4951195779ecfbec34431a976de7335b0a"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/gzip",
+			"Comment": "v1.0-12-g14eb9c4",
+			"Rev": "14eb9c4951195779ecfbec34431a976de7335b0a"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/zlib",
+			"Comment": "v1.0-12-g14eb9c4",
+			"Rev": "14eb9c4951195779ecfbec34431a976de7335b0a"
+		},
+		{
+			"ImportPath": "github.com/klauspost/cpuid",
+			"Comment": "v1.0",
+			"Rev": "09cded8978dc9e80714c4d85b0322337b0a1e5e0"
+		},
+		{
+			"ImportPath": "github.com/klauspost/crc32",
+			"Comment": "v1.0",
+			"Rev": "19b0b332c9e4516a6370a0456e6182c3b5036720"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/rest",
+			"Comment": "v2.1.0-1-g20d695f",
+			"Rev": "20d695fcdc599fb748259219b16f2f1100294c87"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/sendgrid-go",
+			"Comment": "v3.0.0-1-gc453d8c",
+			"Rev": "c453d8c5f6cebfc40ec5b963a71e8a6cbb96d776"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/sendgrid-go/helpers/mail",
+			"Comment": "v3.0.0-1-gc453d8c",
+			"Rev": "c453d8c5f6cebfc40ec5b963a71e8a6cbb96d776"
+		},
+		{
+			"ImportPath": "github.com/valyala/bytebufferpool",
+			"Rev": "a517d2d1537f5b02e9f6c23d4794160c6c2bc157"
+		},
+		{
+			"ImportPath": "github.com/valyala/fasthttp",
+			"Comment": "v20160617-13-g97d96cb",
+			"Rev": "97d96cb3b7feaf22ce9b813313cd8ae20b3589b9"
+		},
+		{
+			"ImportPath": "github.com/valyala/fasthttp/fasthttputil",
+			"Comment": "v20160617-13-g97d96cb",
+			"Rev": "97d96cb3b7feaf22ce9b813313cd8ae20b3589b9"
+		}
+	]
+}
