@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	GO_WEB_PORT      = os.Getenv("GO_WEB_PORT")
+	PORT             = os.Getenv("PORT")
 	SENDGRID_API_KEY = os.Getenv("SENDGRID_API_KEY")
 	PASS_FOR_MAIL    = os.Getenv("PASS_FOR_MAIL")
 	EMAIL            = os.Getenv("EMAIL")
@@ -19,12 +19,12 @@ var (
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds | log.Lshortfile)
-	log.Printf("Starting server at %q", GO_WEB_PORT)
+	log.Printf("Starting server at %q", PORT)
 
 	router := fasthttprouter.New()
 	router.GET("/:password", requestHandler)
 
-	if err := fasthttp.ListenAndServe(GO_WEB_PORT, router.Handler); err != nil {
+	if err := fasthttp.ListenAndServe(PORT, router.Handler); err != nil {
 		log.Fatalf("Error in ListenAndServe: %s", err)
 	}
 }
