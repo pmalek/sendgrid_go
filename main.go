@@ -19,12 +19,12 @@ var (
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds | log.Lshortfile)
-	log.Printf("Starting server at %q", PORT)
+	log.Printf("Starting server at port %q", PORT)
 
 	router := fasthttprouter.New()
 	router.GET("/:password", requestHandler)
 
-	if err := fasthttp.ListenAndServe(PORT, router.Handler); err != nil {
+	if err := fasthttp.ListenAndServe(":"+PORT, router.Handler); err != nil {
 		log.Fatalf("Error in ListenAndServe: %s", err)
 	}
 }
